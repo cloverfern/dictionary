@@ -6,7 +6,6 @@ defmodule Dictionary do
   end
 
   def random_word do
-    word_list()
-    |> Enum.random
+    Enum.random(word_list())
   end
 end
